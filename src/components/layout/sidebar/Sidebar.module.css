@@ -1,0 +1,21 @@
+@reference "../../../app/globals.scss";
+
+.sidebar {
+    @apply flex flex-col items-center justify-between border-r-2 border-[#363636] py-5;
+
+    a {
+        @apply mb-8 block;
+
+        &.active > svg {
+            @apply text-white;
+        }
+    }
+
+    svg {
+        @apply text-[#7C7275] transition-colors duration-300 ease-in-out;
+
+        &:hover {
+            @apply text-white;
+        }
+    }
+}
