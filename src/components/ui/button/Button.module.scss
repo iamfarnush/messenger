@@ -1,0 +1,5 @@
+@reference "../../../app/globals.scss";
+
+.button{
+    @apply bg-[#FBBE07] rounded-xl transition-colors duration-300 ease-linear py-2 px-5 hover:bg-[#D9A300]
+}

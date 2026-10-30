@@ -1,0 +1,23 @@
+@reference "../../../app/globals.scss";
+
+.field {
+  @apply flex items-center mb-4;
+
+  > input {
+    @apply border-none outline-none bg-transparent placeholder:text-[#666463];
+  }
+
+  &:focus-within {
+    .icon {
+      @apply mr-3 text-white transition-colors duration-300 ease-linear;
+    }
+  }
+}
+
+.icon {
+  @apply mr-3 text-[#7C7275] transition-colors duration-300 ease-linear;
+}
+
+.error {
+  @apply text-red-600 text-sm;
+}
